@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="quarter quarter-rt">
+	{%- if page.arb == 'index' -%}
+    {% include 0-index-rt.html %}
+    <img src="/static/imgq/{{ page.imgq-rt }}.jpg" class="imgq imgq-rt">
+	{%- elsif page.arb == 'idees' -%}
+    <img src="/static/imgq/{{ page.imgq-rt }}.jpg" class="imgq imgq-rt">
+	{%- elsif page.arb == 'gens' -%}
+    <img src="/static/imgq/{{ page.imgq-rt }}.jpg" class="imgq imgq-rt">
+	{%- elsif page.arb == 'actions' -%}
+    <img src="/static/imgq/{{ page.imgq-rt }}.jpg" class="imgq imgq-rt">
+	{%- endif -%}
+</div>
+
+<div class="quarter quarter-rb">
+	{%- if page.arb == 'index' -%}
+    {% include 0-index-rb.html %}
+    <img src="/static/imgq/{{ page.imgq-rb }}.jpg" class="imgq imgq-rb">
+	{%- elsif page.arb == 'idees' -%}
+    <img src="/static/imgq/{{ page.imgq-rb }}.jpg" class="imgq imgq-rb">
+	{%- elsif page.arb == 'gens' -%}
+    <img src="/static/imgq/{{ page.imgq-rb }}.jpg" class="imgq imgq-rb">
+	{%- elsif page.arb == 'actions' -%}
+    <img src="/static/imgq/{{ page.imgq-rb }}.jpg" class="imgq imgq-rb">
+	{%- endif -%}
+</div>

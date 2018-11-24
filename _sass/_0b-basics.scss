@@ -1,0 +1,76 @@
+/* BASICS ************************************************/
+
+$font: 'Arial', sans-serif;
+
+$black: #000;
+$grey: #999;
+$white: #ccc;
+
+
+html {
+	background-color: $black;
+	font-family: $font;
+  font-size: 2vh;
+  @media screen and (max-aspect-ratio: 4/3) {
+    font-size: 1.5vw;
+  }
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+}
+
+.quarter {
+  padding: 1.2rem;
+  width: 30rem;
+  height: 22.5rem;
+}
+
+.quarter-lt {
+  background-image: linear-gradient(to right, $grey, $white);
+  margin-bottom: 1rem;
+}
+
+.quarter-lb {
+  background-image: linear-gradient(to top, $grey, $white);
+}
+
+.quarter-rt {
+  background-image: linear-gradient(to bottom, $grey, $white);
+  margin-bottom: 0.7rem;
+  margin-left: 0.7rem;
+}
+
+.quarter-rb {
+  background-image: linear-gradient(to left, $grey, $white);
+  margin-left: 1rem;
+}
+
+.half {
+  padding: 1.2rem;
+  width: 30rem;
+  height: 46rem;
+  background-image: linear-gradient(to bottom, $grey, $white);
+  margin-left: 0.8rem;
+  margin-top: 1rem;
+}
+
+
+
+
+a {
+  text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+	text-decoration: none;
+}
