@@ -8,8 +8,8 @@
 # Do not use tabs, but spaces instead !
 
 # Site settings
-url: "https://leomatteudi.github.io/rataf"
-baseurl: ""
+url: "https://leomatteudi.github.io"
+baseurl: "/rataf"
 author: "Rataf"
 favicon: "/static/img/favicon.ico"
 logo: "/static/img/logo.png"
