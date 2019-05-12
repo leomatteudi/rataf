@@ -3,7 +3,20 @@ layout: default
 ---
 
 <div class="half">
-  <h1>{{ page.title }}</h1>
-  {{ content }}
-  <img src="/static/imgq/{{ page.imgh }}.jpg" class="imgh">
+  
+  <div class="half-container">
+  
+    <h2 class="half-title half-title-{{ page.ref }}">{{ page.title }}</h2>
+    <div class="half-barre half-barre-{{ page.arb }}"></div>
+  
+    <div class="half-content half-content-{{ page.ref }}">
+      {{ content }}
+    </div>
+    
+  </div>
+  
+  {%- if page.arb == 'idees' -%}
+    <img src="/static/imgq/imgh-{{ page.arb }}-{{ page.ref }}.jpg" class="imgh">
+  {%- endif -%}
+  
 </div>

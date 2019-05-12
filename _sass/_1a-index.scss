@@ -1,0 +1,68 @@
+/* INDEX-LT ************************************************/
+
+#index-lt {
+  padding-left: 1.2rem;
+}
+
+
+#index-logo {
+  width: 9rem;
+  padding: 0.2rem 0.2rem 0rem 0.2rem;
+}
+
+#index-logo:hover, #index-logo:focus, #index-logo:active {
+  color: $c_text;
+	background-color: $light;
+}
+
+#index-subtitle {
+  font-size: 1.05rem;
+  letter-spacing: 0.15rem;
+  margin-top: -1.15rem;
+  margin-left: 0.35rem;
+  color: #ddd;
+}
+
+#index-email {
+  color: red;
+  margin-left: 0.2rem;
+}
+
+#index-nav {
+  margin-top: 3rem;
+}
+
+.index-nav-element {
+  padding: 0.2rem 0.2rem 0.15rem 0.2rem;
+}
+
+
+/* INDEX-LB/RT ************************************************/
+
+#index-lb {
+  font-weight: 600;
+  font-size: 153%;
+  color: $grey2;
+}
+
+#index-rt {
+  font-weight: 600;
+  font-size: 153%;
+  color: $grey3;
+}
+
+
+/* INDEX-RB ************************************************/
+
+#index-rb-1 {
+  color: #ae562a;
+}
+#index-rb-2 {
+  color: #044e1d;
+}
+#index-rb-3 {
+  color: #780000;
+}
+#index-rb-4 {
+  color: #2d187b;
+}
