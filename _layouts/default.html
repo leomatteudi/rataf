@@ -9,14 +9,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
-  <link rel="icon" type="image/png" href="{{ site.favicon }}">
   <meta name="author" content="{{ site.author }}">
-  <meta name="description" content="{{ site.description }}">
-  <title>{{ page.title }} / {{ site.title }}</title>  
+  {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
   
-  <link rel="stylesheet" href="/assets/style.css">
-  <script src="/assets/prefixfree.min.js"></script>
-  <script src="/assets/prefixfree.viewport-units.js" defer></script>
+  {%- if page.url == "/" -%}
+  <title>{{ site.title }}</title>
+  {%- else -%}
+  <title>{{ page.title }} • {{ site.title }}</title>
+  {%- endif -%} 
+  
+  <link rel="stylesheet" href="/style.css">
+  <script src="/prefixfree.min.js"></script>
+  <script src="/prefixfree.viewport-units.js" defer></script>
   
 </head>
 
@@ -25,29 +29,33 @@
   <div class="wrapper">
     
     <div class="quarter quarter-lt">
-      {% include 0-index-lt.html %}
-      <img src="/static/imgq/{{ page.imgq-lt }}.jpg" class="imgq imgq-lt">
+      <div class="container">
+        {% include 0-index-lt.html %}
+        <img src="/static/imgq/imgq-lt.jpg" class="imgq imgq-lt">
+      </div>
     </div>
     
     <div class="quarter quarter-lb">
-	  	{%- if page.arb == 'index' -%}
-        {% include 0-index-lb.html %}
-	  	{%- elsif page.arb == 'idees' -%}
-        {% include 1-idees-lb.html %}
-	  	{%- elsif page.arb == 'gens' -%}
-        {% include 2-gens-lb.html %}
-	  	{%- elsif page.arb == 'actions' -%}
-        {% include 3-actions-lb.html %}
-	  	{%- endif -%}
-      <img src="/static/imgq/{{ page.imgq-lb }}.jpg" class="imgq imgq-lb">
+      <div class="container">
+  	  	{%- if page.arb == 'index' -%}
+          {% include 0-index-lb.html %}
+  	  	{%- elsif page.arb == 'idees' -%}
+          {% include 1-idees-lb.html %}
+  	  	{%- elsif page.arb == 'gens' -%}
+          {% include 2-gens-lb.html %}
+  	  	{%- elsif page.arb == 'actions' -%}
+          {% include 3-actions-lb.html %}
+  	  	{%- elsif page.arb == 'lieu' -%}
+          {% include 4-lieu-lb.html %}
+  	  	{%- endif -%}
+        <img src="/static/imgq/imgq-lb-{{ page.arb }}.jpg" class="imgq imgq-lb">
+      </div>
     </div>
     
   </div>
   
   <div class="wrapper">
-    
     {{ content }}
-    
   </div>
 
   

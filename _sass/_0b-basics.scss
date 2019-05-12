@@ -1,10 +1,14 @@
 /* BASICS ************************************************/
 
-$font: 'Arial', sans-serif;
+$font: Arial, sans-serif;
 
 $black: #000;
-$grey: #999;
-$white: #ccc;
+$grey: #999292;
+$grey2: #ada6a6;
+$grey3: #b9b5b5;
+$white: #ddd;
+
+$c_text: #343434;
 
 
 html {
@@ -16,56 +20,9 @@ html {
   }
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+p {
+  line-height: 1.25rem;
 }
-
-.wrapper {
-}
-
-.quarter {
-  padding: 1.2rem;
-  width: 30rem;
-  height: 22.5rem;
-}
-
-.quarter-lt {
-  background-image: linear-gradient(to right, $grey, $white);
-  margin-bottom: 1rem;
-}
-
-.quarter-lb {
-  background-image: linear-gradient(to top, $grey, $white);
-}
-
-.quarter-rt {
-  background-image: linear-gradient(to bottom, $grey, $white);
-  margin-bottom: 0.7rem;
-  margin-left: 0.7rem;
-}
-
-.quarter-rb {
-  background-image: linear-gradient(to left, $grey, $white);
-  margin-left: 1rem;
-}
-
-.half {
-  padding: 1.2rem;
-  width: 30rem;
-  height: 46rem;
-  background-image: linear-gradient(to bottom, $grey, $white);
-  margin-left: 0.8rem;
-  margin-top: 1rem;
-}
-
-
-
 
 a {
   text-decoration: none;

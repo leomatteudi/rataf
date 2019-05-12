@@ -1,2 +1,2 @@
-All content licensed under [Creative Commons Attribution Non-Commercial 4.0 International](https://creativecommons.org/licenses/by-nc/4.0/).
+Website licensed under [Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 Creator: Rataf

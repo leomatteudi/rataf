@@ -8,35 +8,11 @@
 # Do not use tabs, but spaces instead !
 
 # Site settings
-url: "https://leomatteudi.github.io"
-baseurl: "/rataf"
+url: "https://www.rataf.org"
+baseurl: ""
 author: "Rataf"
-favicon: "/static/img/favicon.ico"
-logo: "/static/img/logo.png"
 title: "Rataf"
-description: "Association transdisciplinaire d'intervention culturelle"
 email: "con<!--M-->tact<!--M-->@<!--M-->ra<!--M-->taf<!--M-->.<!--M-->or<!--M-->g"
-
-# Front Matter defaults
-defaults:
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "pages"
-      lang: "fr"
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "posts"
-      permalink: "/:year-:month-:day-:slug"
-      comments: true
-      excerpt_separator: "<!--more-->"
-      lang: "fr"
-
 
 # Github-pages overrides
 kramdown:
@@ -54,7 +30,6 @@ plugins:
   - jekyll-readme-index
   - jekyll-default-layout
   - jekyll-titles-from-headings
-  - jekyll-feed
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap
@@ -66,3 +41,4 @@ sass:
 exclude:
   - LICENCE.md
   - README.md
+  - ._site

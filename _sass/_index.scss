@@ -1,0 +1,98 @@
+/* INDEX-LT ************************************************/
+
+#index-lt {
+  padding-left: 1.1rem;
+}
+
+
+#index-logo {
+  width: 9rem;
+  padding: 0.1rem;
+}
+
+#index-logo:hover, #index-logo:focus, #index-logo:active {
+  color: $c_text;
+	background-color: #e6e5e5;
+}
+
+#index-subtitle {
+  font-size: 1.4rem;
+  margin-top: -1.2rem;
+  font-style: italic;
+  color: #eee;
+}
+
+#index-email {
+  color: red;
+  font-style: italic;
+}
+
+#index-nav {
+  margin-top: 3rem;
+}
+
+.title1 {
+  display: inline-block;
+  font-size: 1.35rem;
+  letter-spacing: 0.03rem;
+  color: $c_text;
+  padding: 0.2rem 0.2rem 0.05rem 0.2rem;
+}
+
+.title1:hover, .title1:focus, .title1:active {
+  color: $c_text;
+	background-color: #e6e5e5;
+}
+
+.title1-article {
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+.title1-article1 {
+  background-color: #00c900;
+}
+.title1-article2 {
+  background-color: #e2ff00;
+}
+.title1-article3a {
+  background-color: #ff0000;
+}
+.title1-article3b {
+  background-color: #006dff;
+}
+.title1-article4 {
+  background-color: $c_text;
+  color: #ccc;
+}
+
+
+/* INDEX-LB/RT ************************************************/
+
+#index-lb {
+  font-weight: 600;
+  font-size: 153%;
+  color: $grey2;
+}
+
+#index-rt {
+  font-weight: 600;
+  font-size: 153%;
+  color: $grey3;
+}
+
+
+/* INDEX-RB ************************************************/
+
+#index-rb-1 {
+  color: #ae562a;
+}
+#index-rb-2 {
+  color: #044e1d;
+}
+#index-rb-3 {
+  color: #780000;
+}
+#index-rb-4 {
+  color: #2d187b;
+}
