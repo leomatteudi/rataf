@@ -1,42 +1,3 @@
-/* INDEX-LT ************************************************/
-
-#index-lt {
-  padding-left: 1.2rem;
-}
-
-
-#index-logo {
-  width: 9rem;
-  padding: 0.2rem 0.2rem 0rem 0.2rem;
-}
-
-#index-logo:hover, #index-logo:focus, #index-logo:active {
-  color: $c_text;
-	background-color: $light;
-}
-
-#index-subtitle {
-  font-size: 1.05rem;
-  letter-spacing: 0.15rem;
-  margin-top: -1.15rem;
-  margin-left: 0.35rem;
-  color: #ddd;
-}
-
-#index-email {
-  color: red;
-  margin-left: 0.2rem;
-}
-
-#index-nav {
-  margin-top: 3rem;
-}
-
-.index-nav-element {
-  padding: 0.2rem 0.2rem 0.15rem 0.25rem;
-}
-
-
 /* INDEX-LB/RT ************************************************/
 
 #index-lb {
@@ -65,4 +26,68 @@
 }
 #index-rb-4 {
   color: #2d187b;
+}
+
+
+#index-h1 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+
+/* CONTACT ************************************************/
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  input, textarea {
+    margin-top: 0.4rem;
+    border: none;
+    padding: 0.3rem;
+  }
+  #contact-form-button {
+    width: 5rem;
+    background-color: $c_text;
+    color: #ccc;
+  }
+  #contact-form-button:hover, #contact-form-button:focus, #contact-form-button:active {
+    color: $c_text;
+    background-color: #ccc;
+  }
+  #contact-form-name {
+    width: 12rem;
+  }
+  #contact-form-email {
+    width: 17rem;
+  }
+  #contact-form-subject {
+    width: 22rem;
+  }
+  #contact-form-message {
+    width: 26.5rem;
+    height: 7rem;
+  }
+}
+
+
+/* LEGAL ************************************************/
+
+#legal-nav {
+  position: absolute;
+  bottom: -1.45rem;
+  right: -4.3rem;
+  color: #444;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+#legal-rb {
+  h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  a {
+    font-weight: bold;
+    color: $c_text;
+  }
 }

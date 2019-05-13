@@ -4,7 +4,7 @@ layout: default
 
 <div class="quarter quarter-rt">
   <div class="container">
-  	{%- if page.arb == 'index' or page.arb == 'legal' -%}
+  	{%- if page.arb == 'index' -%}
       {% include 0-index-rt.html %}
   	{%- endif -%}
     <img src="/static/imgq/imgq-rt-{{ page.arb }}.jpg" class="imgq imgq-rt">
@@ -14,10 +14,11 @@ layout: default
 <div class="quarter quarter-rb">
   <div class="container">
   	{%- if page.arb == 'index' -%}
-      {% include 0-index-rb.html %}
-  	{%- elsif page.arb == 'legal' -%}
-      {% include 0-legal-rb.html %}
+      {%- if page.title -%}
+        <h1 id="index-h1">{{ page.title }}</h2>
+    	{%- endif -%}
+      {{ content }}
   	{%- endif -%}
-      <img src="/static/imgq/imgq-rb-{{ page.arb }}.jpg" class="imgq imgq-rb">
+      <img src="/static/imgq/imgq-rb-{{ page.ref }}.jpg" class="imgq imgq-rb">
   </div>
 </div>

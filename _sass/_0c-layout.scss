@@ -8,8 +8,8 @@ body {
   align-items: center;
 }
 
-.wrapper {
-}
+
+/* QUARTER ************************************************/
 
 .quarter {
   padding: $spacer1;
@@ -46,12 +46,14 @@ body {
 }
 
 
+/* HALF ************************************************/
+
 .half {
   width: 30rem;
-  height: 46rem;
+  height: 45.5rem;
   background-image: linear-gradient(to bottom, $grey, $white);
   margin-left: 1rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   position: relative;
   display: flex;
   justify-content: flex-end;
@@ -100,6 +102,8 @@ body {
 }
 
 
+/* IMAGES ************************************************/
+
 .imgq {
   position: absolute;
 }
@@ -137,15 +141,4 @@ body {
   position: absolute;
   left: 0px;
   top: 12.5rem;
-}
-
-
-
-#legal-nav {
-  position: absolute;
-  bottom: -1.45rem;
-  right: -4.3rem;
-  color: #444;
-  font-size: 0.9rem;
-  font-weight: bold;
 }
