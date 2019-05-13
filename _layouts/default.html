@@ -13,7 +13,7 @@
   {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
   
   {%- if page.url == "/" -%}
-  <title>{{ site.title }}</title>
+  <title>{{ site.title }} • Collectif d'artistes</title>
   {%- else -%}
   <title>{{ page.title }} • {{ site.title }}</title>
   {%- endif -%} 
@@ -37,7 +37,7 @@
     
     <div class="quarter quarter-lb">
       <div class="container">
-  	  	{%- if page.arb == 'index' -%}
+  	  	{%- if page.arb == 'index' or page.arb == 'legal' -%}
           {% include 0-index-lb.html %}
   	  	{%- elsif page.arb == 'idees' -%}
           {% include 1-idees-lb.html %}
@@ -49,6 +49,7 @@
           {% include 4-lieu-lb.html %}
   	  	{%- endif -%}
         <img src="/static/imgq/imgq-lb-{{ page.arb }}.jpg" class="imgq imgq-lb">
+        <a id="legal-nav" href="/mentions-legales">Mentions légales</a>
       </div>
     </div>
     
@@ -57,7 +58,6 @@
   <div class="wrapper">
     {{ content }}
   </div>
-
   
 </body>
 
