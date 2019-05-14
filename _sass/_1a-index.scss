@@ -1,7 +1,9 @@
 /* INDEX-LB/RT ************************************************/
 
 #index-lb, #index-rt {
+  padding: $spacer1;
   height: 100%;
+  max-height: 100%;
   font-weight: 600;
   font-size: 1.5rem;
   display: flex;
@@ -20,19 +22,25 @@
 
 /* INDEX-RB ************************************************/
 
-#index-rb-1 {
-  color: #ae562a;
-}
-#index-rb-2 {
-  color: #044e1d;
-}
-#index-rb-3 {
-  color: #780000;
-}
-#index-rb-4 {
-  color: #2d187b;
+
+#index-rb {
+  position: absolute;
+  bottom: $spacer1;
+  right: $spacer1;
 }
 
+#index-rb-index1 {
+  color: #ae562a;
+}
+#index-rb-index2 {
+  color: #044e1d;
+}
+#index-rb-index3 {
+  color: #780000;
+}
+#index-rb-index4 {
+  color: #2d187b;
+}
 
 #index-h1 {
   font-size: 1.6rem;
@@ -89,10 +97,6 @@
 }
 
 #legal-rb {
-  h2 {
-    font-size: 1.6rem;
-    font-weight: bold;
-  }
   a {
     font-weight: bold;
     color: $c_text;
