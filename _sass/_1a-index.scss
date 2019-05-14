@@ -1,14 +1,19 @@
 /* INDEX-LB/RT ************************************************/
 
-#index-lb {
+#index-lb, #index-rt {
+  height: 100%;
   font-weight: 600;
-  font-size: 153%;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#index-lb {
   color: $grey2;
 }
 
 #index-rt {
-  font-weight: 600;
-  font-size: 153%;
   color: $grey3;
 }
 
@@ -37,6 +42,7 @@
 
 /* CONTACT ************************************************/
 #contact-form {
+  margin-top: -0.5rem;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -44,6 +50,7 @@
     margin-top: 0.4rem;
     border: none;
     padding: 0.3rem;
+    border-radius: 0px;
   }
   #contact-form-button {
     width: 5rem;

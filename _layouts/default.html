@@ -29,14 +29,11 @@
   <div class="wrapper">
     
     <div class="quarter quarter-lt">
-      <div class="container">
-        {% include site-lt.html %}
-        <img src="/static/imgq/imgq-lt.jpg" class="imgq imgq-lt">
-      </div>
+      {% include site-lt.html %}
+      <img src="/static/imgq/imgq-lt.jpg" class="imgq imgq-lt">
     </div>
     
     <div class="quarter quarter-lb">
-      <div class="container">
   	  	{%- if page.arb == 'index' -%}
           {% include 0-index-lb.html %}
   	  	{%- elsif page.arb == 'idees' -%}
@@ -50,7 +47,6 @@
   	  	{%- endif -%}
         <img src="/static/imgq/imgq-lb-{{ page.arb }}.jpg" class="imgq imgq-lb">
         <a id="legal-nav" href="/mentions-legales">Mentions légales</a>
-      </div>
     </div>
     
   </div>
