@@ -6,7 +6,7 @@ layout: default
 	{%- if page.arb == 'index' -%}
     {% include 0-index-rt.html %}
 	{%- endif -%}
-  <img src="/static/imgq/imgq-rt-{{ page.arb }}.jpg" class="imgq imgq-rt">
+  <img src="/static/imgq/imgq-rt-{{ page.arb }}.jpg" class="imgq imgq-rt" alt="">
 </div>
 
 <div class="quarter quarter-rb">
@@ -18,5 +18,5 @@ layout: default
       {{ content }}
     </div>
   	{%- endif -%}
-    <img src="/static/imgq/imgq-rb-{{ page.ref }}.jpg" class="imgq imgq-rb">
+    <img src="/static/imgq/imgq-rb-{{ page.ref }}.jpg" class="imgq imgq-rb" alt="">
 </div>
