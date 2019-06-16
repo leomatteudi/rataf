@@ -67,10 +67,12 @@ body {
   font-weight: bold;
   margin-right: $spacer2;
 }
-.half-title-methodes {
-  margin-right: $spacer1;
-}
 
+.half-subtitle {
+  font-style: italic;
+  margin-top: 0.5rem;
+  margin-right: $spacer2;
+}
 
 .half-barre {
   margin-top: 1rem;
@@ -94,8 +96,11 @@ body {
 .half-content {
   margin-right: $spacer2;
 }
-.half-content-methodes {
+
+
+.half-spacer1 {
   margin-right: $spacer1;
+  margin-left: $spacer1;
 }
 
 
