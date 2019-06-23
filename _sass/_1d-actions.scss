@@ -18,20 +18,27 @@
   h2 {
     font-weight: bold;
     font-style: italic;
+    color: $red1;
     font-size: 1.3rem;
-    margin-bottom: 1.3rem;
+    margin-top: 1.3rem;
+    text-align: center;
   }
   p {
     margin-top: 0.8rem;
     text-align: right;
   }
   a {
-    color: $red1;
-    font-weight: bold;
+    color: #888;
+    font-style: italic;
+    font-size: 0.8rem;
   }
   img {
     max-width: 100%;
   }
+}
+
+.actions-imga, .actions-imgb, .actions-imgc {
+  display: flex;
 }
 
 .actions-imga {
@@ -53,11 +60,11 @@
 }
 
 .actions-img-legend {
-  font-size: 0.8rem;
   text-align: right;
-  font-style: italic;
-  margin-top: 0.1rem;
+  margin-top: 0.2rem;
 }
+
+
 
 .actions-txt {
   position: absolute;
@@ -66,4 +73,8 @@
   width: 11rem;
   font-size: 0.93rem;
   margin-top : 4rem;
+}
+
+.actions-out {
+  color: $red1;
 }

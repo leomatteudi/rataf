@@ -12,14 +12,12 @@ layout: default
     {%- endif -%}
     <div class="half-barre half-barre-{{ page.arb }}"></div>
   
-    <div class="half-content half-spacer{{ page.spacer }}">
+    <div class="half-content half-spacer{{ page.spacer }} {% if page.arb == 'gens' %}half-content-gens{% endif %}">
       {{ content }}
     </div>
     
   </div>
   
-  {%- if page.arb == 'idees' -%}
-    <img src="/static/imgq/imgh-{{ page.arb }}-{{ page.ref }}.jpg" class="imgh" alt="">
-  {%- endif -%}
+  {% if page.halfimg == true %}<img src="/static/imgq/imgh-{{ page.arb }}-{{ page.ref }}.jpg" class="imgh" alt="">{% endif %}
   
 </div>
