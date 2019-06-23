@@ -1,9 +1,69 @@
 #actions-lb {
   position: absolute;
-  bottom: 6rem;
-  left: $spacer2;
+  bottom: $spacer1;
+  left: $spacer1;
   font-style: italic;
   a {
+    color: $red1;
     font-weight: bold;
   }
+}
+
+.actions-half {
+  margin-left: 1rem;
+  margin-top: 0.4rem;
+  width: 30rem;
+  height: 45rem;
+  color: #888;
+  h2 {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.3rem;
+    margin-bottom: 1.3rem;
+  }
+  p {
+    margin-top: 0.8rem;
+    text-align: right;
+  }
+  a {
+    color: $red1;
+    font-weight: bold;
+  }
+  img {
+    max-width: 100%;
+  }
+}
+
+.actions-imga {
+  width: 30rem;
+}
+
+.actions-imgbc {
+  display: flex;
+  position: relative;
+}
+
+.actions-imgb, .actions-imgc {
+  margin-left: 0.2rem;
+  margin-top: 1.3rem;
+  width: 17.5rem;
+}
+.actions-imgc {
+  margin-left: 0.3rem;
+}
+
+.actions-img-legend {
+  font-size: 0.8rem;
+  text-align: right;
+  font-style: italic;
+  margin-top: 0.1rem;
+}
+
+.actions-txt {
+  position: absolute;
+  bottom: 2rem;
+  right: 0;
+  width: 11rem;
+  font-size: 0.93rem;
+  margin-top : 4rem;
 }
