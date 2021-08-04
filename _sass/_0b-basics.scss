@@ -1,0 +1,81 @@
+/* BASICS ************************************************/
+
+$spacer1: 1.6rem;
+$spacer2: 3rem;
+
+$font: Arial, sans-serif;
+
+$black: #000;
+$grey: #999292;
+$grey2: #ada6a6;
+$grey3: #b9b5b5;
+$white: #ddd;
+
+$light: #e6e5e5;
+
+$green1: #00c900;
+$green2: #00a300;
+$yellow1: #e2ff00;
+$yellow2: #ff5400;
+$red1: #ff0000;
+$blue1: #006dff;
+
+$c_text: #343434;
+
+
+html {
+	background-color: $black;
+  color: $c_text;
+	font-family: $font;
+  font-size: 2vh;
+  line-height: 1;
+  @media screen and (max-aspect-ratio: 4/3) {
+    font-size: 1.5vw;
+  }
+}
+
+p {
+  line-height: 1.25;
+  margin-top: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: $c_text;
+}
+
+a:hover, a:focus, a:active {
+	text-decoration: none;
+  color: $c_text;
+  background-color: $light;
+}
+
+
+.title1 {
+  display: inline-block;
+  font-size: 1.35rem;
+  color: $c_text;
+}
+
+h1.title1 {
+  font-style: normal;
+  margin-bottom: 0.5rem;
+}
+
+.title1-article {
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+.title1-article1 {
+  background-color: $green1;
+}
+.title1-article2 {
+  background-color: $yellow1;
+}
+.title1-article3a {
+  background-color: $red1;
+}
+.title1-article4 {
+  background-color: $blue1;
+}

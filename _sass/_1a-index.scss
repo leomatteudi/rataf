@@ -1,0 +1,109 @@
+/* INDEX-LB/RT ************************************************/
+
+#index-lb, #index-rt {
+  padding: $spacer1;
+  height: 100%;
+  max-height: 100%;
+  font-weight: 600;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+#index-lb {
+  color: $grey2;
+}
+
+#index-rt {
+  color: $grey3;
+}
+
+
+/* INDEX-RB ************************************************/
+
+
+#index-rb {
+  position: absolute;
+  bottom: $spacer1;
+  right: $spacer1;
+}
+
+#index-rb-index1 {
+  color: #ae562a;
+  margin-top: 0rem;
+}
+#index-rb-index2 {
+  color: #044e1d;
+  margin-top: 0rem;
+}
+#index-rb-index3 {
+  color: #780000;
+  margin-top: 0rem;
+}
+#index-rb-index4 {
+  color: #2d187b;
+  margin-top: 0rem;
+}
+
+#index-h1 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+
+/* CONTACT ************************************************/
+#contact-form {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  input, textarea {
+    margin-top: 0.4rem;
+    border: none;
+    padding: 0.3rem;
+    border-radius: 0px;
+  }
+  #contact-form-button {
+    width: 5rem;
+    background-color: $c_text;
+    color: #ccc;
+  }
+  #contact-form-button:hover, #contact-form-button:focus, #contact-form-button:active {
+    color: $c_text;
+    background-color: #ccc;
+  }
+  #contact-form-name {
+    width: 12rem;
+  }
+  #contact-form-email {
+    width: 17rem;
+  }
+  #contact-form-subject {
+    width: 22rem;
+  }
+  #contact-form-message {
+    width: 26.5rem;
+    height: 7rem;
+  }
+}
+
+
+/* LEGAL ************************************************/
+
+#legal-nav {
+  position: absolute;
+  bottom: -1.45rem;
+  right: -4.3rem;
+  color: #444;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+#legal-rb {
+  a {
+    font-weight: bold;
+    color: $c_text;
+  }
+}

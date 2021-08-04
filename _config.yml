@@ -1,0 +1,44 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+#
+# Do not use tabs, but spaces instead !
+
+# Site settings
+url: "https://www.rataf.org"
+baseurl: ""
+author: "Rataf"
+title: "Rataf"
+email: "con<!--M-->tact<!--M-->@<!--M-->ra<!--M-->taf<!--M-->.<!--M-->or<!--M-->g"
+
+# Github-pages overrides
+kramdown:
+  hard_wrap: true
+theme: null
+
+# Github-pages plugins
+plugins:
+  - jekyll-coffeescript
+  - jekyll-gist
+  - jekyll-github-metadata
+  - jekyll-paginate
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Build settings
+destination: ._site
+sass:
+  style: compressed
+exclude:
+  - LICENCE.md
+  - README.md
+  - ._site

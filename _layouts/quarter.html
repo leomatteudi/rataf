@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="quarter quarter-rt">
+	{%- if page.arb == 'index' -%}
+    {% include 0-index-rt.html %}
+	{%- endif -%}
+  <img src="/static/imgq/imgq-rt-{{ page.arb }}.jpg" class="imgq imgq-rt" alt="">
+</div>
+
+<div class="quarter quarter-rb">
+  	{%- if page.arb == 'index' -%}
+    <div id="index-rb">
+      {%- if page.title -%}
+      <h1 id="index-h1">{{ page.title }}</h1>
+  	  {%- endif -%}
+      {{ content }}
+    </div>
+  	{%- endif -%}
+    <img src="/static/imgq/imgq-rb-{{ page.ref }}.jpg" class="imgq imgq-rb" alt="">
+</div>

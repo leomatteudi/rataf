@@ -1,0 +1,83 @@
+#actions-lb {
+  position: absolute;
+  bottom: $spacer1;
+  left: $spacer1;
+  font-style: italic;
+  a {
+    color: $red1;
+    text-decoration: underline;
+  }
+}
+
+.actions-half {
+  margin-left: 1rem;
+  width: 30rem;
+  height: 45rem;
+  color: #888;
+  h2 {
+    font-weight: bold;
+    font-style: italic;
+    color: $white;
+    font-size: 1.6rem;
+    margin-top: 1.3rem;
+    text-align: center;
+  }
+  .actions-titlesmall {
+    font-size: 1.3rem;
+  }
+  p {
+    margin-top: 0.8rem;
+    text-align: right;
+  }
+  a {
+    color: #888;
+    font-style: italic;
+    font-size: 0.8rem;
+  }
+  img {
+    max-width: 100%;
+  }
+}
+
+.actions-imga, .actions-imgb, .actions-imgc {
+  display: flex;
+}
+
+.actions-imga {
+  width: 30rem;
+}
+
+.actions-imgbc {
+  display: flex;
+  position: relative;
+}
+
+.actions-imgb, .actions-imgc {
+  margin-left: 0.2rem;
+  margin-top: 1.2rem;
+  width: 17.5rem;
+}
+.actions-imgc {
+  margin-left: 0.3rem;
+}
+
+.actions-img-legend {
+  text-align: right;
+  margin-top: 0.2rem;
+}
+
+
+
+.actions-txt {
+  position: absolute;
+  bottom: 2rem;
+  right: 0;
+  width: 11rem;
+  font-size: 0.93rem;
+  margin-top : 4rem;
+}
+
+.actions-out {
+  color: $red1;
+  text-decoration: underline;
+}

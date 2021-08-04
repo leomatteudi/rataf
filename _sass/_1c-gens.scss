@@ -1,0 +1,19 @@
+#gens-lb {
+  position: absolute;
+  bottom: $spacer1;
+  left: $spacer1;
+  font-style: italic;
+  a {
+    color: $yellow2;
+    text-decoration: underline;
+  }
+}
+
+.gens-link {
+  color: $yellow2;
+  text-decoration: underline;
+}
+
+.half-content-gens {
+  font-size: 0.85rem;
+}

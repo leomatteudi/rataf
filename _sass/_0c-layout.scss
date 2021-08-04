@@ -1,0 +1,146 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* QUARTER ************************************************/
+
+.quarter {
+  width: 30rem;
+  height: 22.5rem;
+  position: relative;
+}
+
+.quarter-lt {
+  background-image: linear-gradient(to right, $grey, $white);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  padding-left: $spacer2;
+}
+
+.quarter-lb {
+  background-image: linear-gradient(to top, $grey, $white);
+}
+
+.quarter-rt {
+  background-image: linear-gradient(to bottom, $grey, $white);
+  margin-bottom: 0.7rem;
+  margin-left: 0.7rem;
+  text-align: right;
+}
+
+.quarter-rb {
+  background-image: linear-gradient(to left, $grey, $white);
+  margin-left: 1rem;
+  text-align: right;
+}
+
+
+/* HALF ************************************************/
+
+.half {
+  width: 30rem;
+  height: 45rem;
+  background-image: linear-gradient(to bottom, $grey, $white);
+  margin-left: 1rem;
+  margin-top: 0.4rem;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: right;
+}
+
+.half-container {
+  width: 100%;
+}
+
+.half-title {
+  font-size: $spacer1;
+  font-weight: bold;
+  margin-right: $spacer2;
+}
+
+.half-subtitle {
+  font-style: italic;
+  margin-top: 0.5rem;
+  margin-right: $spacer2;
+}
+
+.half-barre {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  height: $spacer1;
+}
+.half-barre-idees {
+  background-color: $green1;
+}
+.half-barre-gens {
+  background-color: $yellow1;
+}
+.half-barre-actions {
+  background-color: $red1;
+}
+.half-barre-lieu {
+  background-color: $c_text;
+}
+
+
+.half-content {
+  margin-right: $spacer2;
+}
+
+
+.half-spacer1 {
+  margin-right: $spacer1;
+  margin-left: $spacer1;
+}
+
+
+/* IMAGES ************************************************/
+
+.imgq {
+  position: absolute;
+}
+
+.imgq-lt {
+  max-width: 10rem;
+  max-height: 10rem;
+  bottom: 0px;
+  right: 0px;
+}
+
+.imgq-lb {
+  max-width: 8rem;
+  max-height: 8rem;
+  top: 0px;
+  right: 0px;
+}
+
+.imgq-rt {
+  max-width: 10rem;
+  max-height: 12rem;
+  bottom: 0px;
+  left: 0px;
+}
+
+.imgq-rb {
+  max-width: 9rem;
+  max-height: 9rem;
+  top: 0px;
+  left: 0px;
+}
+
+.imgh {
+  height: 19rem;
+  position: absolute;
+  left: 0px;
+  top: 12.5rem;
+}

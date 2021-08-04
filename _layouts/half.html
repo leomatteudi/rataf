@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="half">
+  
+  <div class="half-container">
+  
+    <h2 class="half-title half-spacer{{ page.spacer }}">{{ page.title }}</h2>
+    {%- if page.subtitle -%}
+      <div class="half-subtitle half-spacer{{ page.spacer }}">{{ page.subtitle }}</div>
+    {%- endif -%}
+    <div class="half-barre half-barre-{{ page.arb }}"></div>
+  
+    <div class="half-content half-spacer{{ page.spacer }} {% if page.arb == 'gens' %}half-content-gens{% endif %}">
+      {{ content }}
+    </div>
+    
+  </div>
+  
+  {% if page.halfimg == true %}<img src="/static/imgq/imgh-{{ page.arb }}-{{ page.ref }}.jpg" class="imgh" alt="">{% endif %}
+  
+</div>

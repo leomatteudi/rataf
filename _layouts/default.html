@@ -1,0 +1,60 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <meta name="author" content="{{ site.author }}">
+  {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+  
+  {%- if page.url == "/" -%}
+  <title>{{ site.title }} • Collectif d'artistes</title>
+  {%- else -%}
+  <title>{{ page.title }} • {{ site.title }}</title>
+  {%- endif -%} 
+  
+  <link rel="stylesheet" href="/style.css">
+  <script src="/prefixfree.min.js"></script>
+  <script src="/prefixfree.viewport-units.js" defer></script>
+  
+</head>
+
+<body>
+  
+  <div class="wrapper">
+    
+    <div class="quarter quarter-lt">
+      {% include site-lt.html %}
+      <img src="/static/imgq/imgq-lt.jpg" class="imgq imgq-lt" alt="">
+    </div>
+    
+    <div class="quarter quarter-lb">
+  	  	{%- if page.arb == 'index' -%}
+          {% include 0-index-lb.html %}
+  	  	{%- elsif page.arb == 'idees' -%}
+          {% include 1-idees-lb.html %}
+  	  	{%- elsif page.arb == 'gens' -%}
+          {% include 2-gens-lb.html %}
+  	  	{%- elsif page.arb == 'actions' -%}
+          {% include 3-actions-lb.html %}
+  	  	{%- elsif page.arb == 'lieu' -%}
+          {% include 4-lieu-lb.html %}
+  	  	{%- endif -%}
+        <img src="/static/imgq/imgq-lb-{{ page.arb }}.jpg" class="imgq imgq-lb" alt="">
+        <a id="legal-nav" href="/mentions-legales">Mentions légales</a>
+    </div>
+    
+  </div>
+  
+  <div class="wrapper">
+    {{ content }}
+  </div>
+  
+</body>
+
+</html>

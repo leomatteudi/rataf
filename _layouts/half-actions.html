@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<div class="actions-half">
+    
+  
+  <div class="actions-imga"><a href="{{ page.liena }}" target="_blank">
+    <img src="/static/actions/action{{ page.ref }}a.jpg" alt="action{{ page.ref }}a">
+    <div class="actions-img-legend">{{ page.legenda }}</div>
+  </a></div>
+
+
+  <h2 class="{% if page.titlesmall == true %}actions-titlesmall{% endif %}">{{ page.title }}</h2>
+
+
+  <div class="actions-imgbc">
+  
+    <div>
+  
+      <div class="actions-imgb"><a href="{{ page.lienb }}" target="_blank">
+        <img src="/static/actions/action{{ page.ref }}b.jpg" alt="action{{ page.ref }}b">
+        <div class="actions-img-legend">{{ page.legendb }}</div>
+      </a></div>
+
+      <div class="actions-imgc"><a href="{{ page.lienc }}" target="_blank">
+        <img src="/static/actions/action{{ page.ref }}c.jpg" alt="action{{ page.ref }}c">
+        <div class="actions-img-legend">{{ page.legendc }}</div>
+      </a></div>
+    
+    </div>
+  
+    <div class="actions-txt">
+      {{ content }}
+    </div>
+    
+</div>
